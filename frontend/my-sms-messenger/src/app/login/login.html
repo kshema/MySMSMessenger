@@ -1,0 +1,42 @@
+<div class="login-box">
+<div class="login-container">
+    <!-- Left Side: Login Form -->
+    <div class="login-form">
+      <h2>Login</h2>
+
+      <!-- Error Message -->
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+
+      <form (ngSubmit)="login()" #loginForm="ngForm">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="email"
+          required
+        />
+  
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="password"
+          required
+        />
+  
+        <button type="submit" [disabled]="loginForm.invalid">Login</button>
+      </form>
+    </div>
+  
+    <!-- Right Side: Welcome Message -->
+    <div class="welcome-section">
+      <h2>Welcome!</h2>
+      <p>Don't have an account?</p>
+      <a routerLink="/sign-up" class="sign-up-link">Sign Up</a>
+    </div>
+  </div>
+  </div>

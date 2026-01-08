@@ -3968,3 +3968,1462 @@ MONGODB | mongo:27017 req:137 | mysmsmessenger_development.find | SUCCEEDED | 0.
 Completed 200 OK in 25ms (Views: 10.8ms | MongoDB: 0.0ms | Allocations: 3532)
 
 
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started POST "/users" for 192.168.65.1 at 2026-01-08 17:20:37 +0000
+Processing by RegistrationsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abc@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"abc@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+HTTP Origin header (http://localhost:4200) didn't match request.base_url (http://localhost:3000)
+Completed 422 Unprocessable Entity in 0ms (MongoDB: 0.0ms | Allocations: 422)
+
+
+  
+ActionController::InvalidAuthenticityToken (HTTP Origin header (http://localhost:4200) didn't match request.base_url (http://localhost:3000)):
+  
+actionpack (7.0.10) lib/action_controller/metal/request_forgery_protection.rb:253:in `handle_unverified_request'
+actionpack (7.0.10) lib/action_controller/metal/request_forgery_protection.rb:286:in `handle_unverified_request'
+devise (4.9.4) lib/devise/controllers/helpers.rb:257:in `handle_unverified_request'
+actionpack (7.0.10) lib/action_controller/metal/request_forgery_protection.rb:275:in `verify_authenticity_token'
+activesupport (7.0.10) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.10) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.10) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.10) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.10) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.10) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.10) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.10) lib/active_support/callbacks.rb:106:in `run_callbacks'
+actionpack (7.0.10) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.10) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.10) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.10) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.10) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.10) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.10) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.10) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+mongoid (7.6.0) lib/mongoid/railties/controller_runtime.rb:21:in `process_action'
+actionpack (7.0.10) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.10) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.10) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.10) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.10) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.10) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.10) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.10) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.10) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.10) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.10) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.10) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden-jwt_auth (0.12.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.12.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.2.21) lib/rack/builder.rb:244:in `call'
+warden-jwt_auth (0.12.0) lib/warden/jwt_auth/middleware.rb:22:in `call'
+warden (1.2.9) lib/warden/manager.rb:31:in `call'
+rack (2.2.21) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.21) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.21) lib/rack/etag.rb:27:in `call'
+rack (2.2.21) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.21) lib/rack/head.rb:12:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.10) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.10) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.10) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.10) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.10) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.10) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.10) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.10) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.21) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.10) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.10) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.10) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.21) lib/rack/sendfile.rb:127:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+rack-cors (2.0.2) lib/rack/cors.rb:102:in `call'
+railties (7.0.10) lib/rails/engine.rb:531:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+Started GET "/users" for 192.168.65.1 at 2026-01-08 17:20:56 +0000
+Processing by ApplicationController#frontend as HTML
+  Parameters: {"path"=>"users"}
+Completed 500 Internal Server Error in 1ms (MongoDB: 0.0ms | Allocations: 599)
+
+
+  
+ArgumentError (File /app/public/index.html does not exist):
+  
+app/controllers/application_controller.rb:3:in `frontend'
+Started GET "/favicon.ico" for 192.168.65.1 at 2026-01-08 17:20:56 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+[dotenv] Loaded [33m.env[0m
+Started GET "/users" for 192.168.65.1 at 2026-01-08 17:22:02 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/favicon.ico" for 192.168.65.1 at 2026-01-08 17:22:02 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/users" for 192.168.65.1 at 2026-01-08 17:22:11 +0000
+Processing by RegistrationsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abc@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"abc@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+MONGODB | attempting to resolve cluster0.r5tcokx.mongodb.net
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Topology type 'Unknown' changed to type 'ReplicaSetNoPrimary'.
+MONGODB | Server ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 initializing.
+MONGODB | Server ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 initializing.
+MONGODB | Server ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017,name=atlas-rlh8mo-shard-0] servers=[#<Server address=ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 UNKNOWN>,#<Server address=ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 UNKNOWN>,#<Server address=ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 UNKNOWN>]>
+MONGODB | Server description for ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 changed from 'unknown' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetNoPrimary' topology.
+MONGODB | Waiting for up to 29.84 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017,name=atlas-rlh8mo-shard-0] servers=[#<Server address=ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 UNKNOWN>,#<Server address=ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 SECONDARY replica_set=atlas-rlh8mo-shard-0 pool=#<ConnectionPool size=0 (0-20) used=0 avail=0 pending=0 ready>>,#<Server address=ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 UNKNOWN>]>
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'unknown' to 'primary'.
+MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+MONGODB | Waiting for up to 29.81 seconds for servers to be scanned: #<Cluster topology=ReplicaSetWithPrimary[ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017,name=atlas-rlh8mo-shard-0,v=132,e=7fffffff0000000000000262] servers=[#<Server address=ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 UNKNOWN>,#<Server address=ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 SECONDARY replica_set=atlas-rlh8mo-shard-0 pool=#<ConnectionPool size=0 (0-20) used=0 avail=0 pending=0 ready>>,#<Server address=ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 PRIMARY replica_set=atlas-rlh8mo-shard-0 pool=#<ConnectionPool size=0 (0-20) used=0 avail=0 pending=0 ready>>]>
+MONGODB | Server description for ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 changed from 'unknown' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+The criteria cache has been deprecated and will be removed in Mongoid 8. Please enable the Mongoid QueryCache to have caching functionality.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:10 conn:1:1 sconn:1012433 | admin.saslStart | STARTED | {}
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:10 | admin.saslStart | SUCCEEDED | 0.016s
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:11 conn:1:1 sconn:1012433 | admin.saslContinue | STARTED | {}
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:11 | admin.saslContinue | SUCCEEDED | 0.015s
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:12 conn:1:1 sconn:1012433 | admin.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"abc@test.com"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"admin", "lsid"=>{"id"=><BSON::Binary:0x12620 type=uuid data=0xc69c6eaee50f4ca7...>}}
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:12 | admin.find | FAILED | [8000:AtlasError]: (Unauthorized) not authorized on admin to execute command { find: "users", $db: "admin", filter: { email: "abc@test.com" }, limit: 1, projection: { _id: 1 }, lsid: { id: {4 [198 156 110 174 229 15 76 167 181 68 180 198 113 94 144 233]} } } | 0.01612908400420565s
+Completed 500 Internal Server Error in 724ms (MongoDB: 0.0ms | Allocations: 13990)
+
+
+  
+Mongo::Error::OperationFailure ([8000:AtlasError]: (Unauthorized) not authorized on admin to execute command { find: "users", $db: "admin", filter: { email: "abc@test.com" }, limit: 1, projection: { _id: 1 }, lsid: { id: {4 [198 156 110 174 229 15 76 167 181 68 180 198 113 94 144 233]} } } (on ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017, modern retry, attempt 1)):
+  
+mongo (2.22.0) lib/mongo/operation/result.rb:377:in `raise_operation_failure'
+mongo (2.22.0) lib/mongo/operation/result.rb:343:in `validate!'
+mongo (2.22.0) lib/mongo/operation/shared/response_handling.rb:36:in `block (3 levels) in validate_result'
+mongo (2.22.0) lib/mongo/operation/shared/response_handling.rb:106:in `add_server_diagnostics'
+mongo (2.22.0) lib/mongo/operation/shared/response_handling.rb:35:in `block (2 levels) in validate_result'
+mongo (2.22.0) lib/mongo/operation/shared/response_handling.rb:53:in `add_error_labels'
+mongo (2.22.0) lib/mongo/operation/shared/response_handling.rb:34:in `block in validate_result'
+mongo (2.22.0) lib/mongo/operation/shared/response_handling.rb:92:in `unpin_maybe'
+mongo (2.22.0) lib/mongo/operation/shared/response_handling.rb:33:in `validate_result'
+mongo (2.22.0) lib/mongo/operation/shared/executable.rb:96:in `block in execute'
+<internal:kernel>:90:in `tap'
+mongo (2.22.0) lib/mongo/operation/shared/executable.rb:95:in `execute'
+mongo (2.22.0) lib/mongo/operation/shared/op_msg_executable.rb:52:in `execute_with_connection'
+mongo (2.22.0) lib/mongo/operation/shared/op_msg_executable.rb:39:in `block in execute'
+mongo (2.22.0) lib/mongo/server/connection_pool.rb:722:in `with_connection'
+mongo (2.22.0) lib/mongo/server.rb:495:in `with_connection'
+mongo (2.22.0) lib/mongo/operation/shared/op_msg_executable.rb:35:in `execute'
+mongo (2.22.0) lib/mongo/collection/view/iterable.rb:177:in `send_initial_query'
+mongo (2.22.0) lib/mongo/collection/view/iterable.rb:103:in `block in select_cursor'
+mongo (2.22.0) lib/mongo/retryable/read_worker.rb:70:in `block in read_with_retry_cursor'
+mongo (2.22.0) lib/mongo/retryable/read_worker.rb:205:in `modern_read_with_retry'
+mongo (2.22.0) lib/mongo/retryable/read_worker.rb:121:in `read_with_retry'
+mongo (2.22.0) lib/mongo/retryable/read_worker.rb:69:in `read_with_retry_cursor'
+/usr/local/lib/ruby/3.3.0/forwardable.rb:240:in `read_with_retry_cursor'
+/usr/local/lib/ruby/3.3.0/forwardable.rb:240:in `read_with_retry_cursor'
+mongo (2.22.0) lib/mongo/collection/view/iterable.rb:102:in `select_cursor'
+mongo (2.22.0) lib/mongo/collection/view/iterable.rb:198:in `new_cursor_for_iteration'
+mongo (2.22.0) lib/mongo/collection/view/iterable.rb:44:in `each'
+mongoid (7.6.0) lib/mongoid/contextual/mongo.rb:184:in `first'
+mongoid (7.6.0) lib/mongoid/contextual/mongo.rb:184:in `block in exists?'
+mongoid (7.6.0) lib/mongoid/contextual/mongo.rb:588:in `try_cache'
+mongoid (7.6.0) lib/mongoid/contextual/mongo.rb:183:in `exists?'
+/usr/local/lib/ruby/3.3.0/forwardable.rb:240:in `exists?'
+mongoid (7.6.0) lib/mongoid/validatable/uniqueness.rb:267:in `validate_root'
+mongoid (7.6.0) lib/mongoid/validatable/uniqueness.rb:47:in `block in validate_each'
+mongoid (7.6.0) lib/mongoid/validatable/queryable.rb:22:in `with_query'
+mongoid (7.6.0) lib/mongoid/validatable/uniqueness.rb:41:in `validate_each'
+activemodel (7.0.10) lib/active_model/validator.rb:153:in `block in validate'
+activemodel (7.0.10) lib/active_model/validator.rb:149:in `each'
+activemodel (7.0.10) lib/active_model/validator.rb:149:in `validate'
+activesupport (7.0.10) lib/active_support/callbacks.rb:423:in `block in make_lambda'
+activesupport (7.0.10) lib/active_support/callbacks.rb:180:in `block (2 levels) in halting_and_conditional'
+activesupport (7.0.10) lib/active_support/callbacks.rb:687:in `block (2 levels) in default_terminator'
+activesupport (7.0.10) lib/active_support/callbacks.rb:686:in `catch'
+activesupport (7.0.10) lib/active_support/callbacks.rb:686:in `block in default_terminator'
+activesupport (7.0.10) lib/active_support/callbacks.rb:181:in `block in halting_and_conditional'
+activesupport (7.0.10) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.10) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.10) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.10) lib/active_support/callbacks.rb:106:in `run_callbacks'
+mongoid (7.6.0) lib/mongoid/interceptable.rb:122:in `run_callbacks'
+activesupport (7.0.10) lib/active_support/callbacks.rb:929:in `_run_validate_callbacks'
+activemodel (7.0.10) lib/active_model/validations.rb:406:in `run_validations!'
+activemodel (7.0.10) lib/active_model/validations/callbacks.rb:115:in `block in run_validations!'
+activesupport (7.0.10) lib/active_support/callbacks.rb:107:in `run_callbacks'
+mongoid (7.6.0) lib/mongoid/interceptable.rb:122:in `run_callbacks'
+activesupport (7.0.10) lib/active_support/callbacks.rb:929:in `_run_validation_callbacks'
+activemodel (7.0.10) lib/active_model/validations/callbacks.rb:115:in `run_validations!'
+activemodel (7.0.10) lib/active_model/validations.rb:337:in `valid?'
+mongoid (7.6.0) lib/mongoid/validatable.rb:88:in `valid?'
+activemodel (7.0.10) lib/active_model/validations.rb:374:in `invalid?'
+mongoid (7.6.0) lib/mongoid/persistable/creatable.rb:104:in `prepare_insert'
+mongoid (7.6.0) lib/mongoid/persistable/creatable.rb:20:in `insert'
+mongoid (7.6.0) lib/mongoid/persistable/savable.rb:20:in `save'
+devise (4.9.4) app/controllers/devise/registrations_controller.rb:19:in `create'
+actionpack (7.0.10) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.10) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.10) lib/action_controller/metal/rendering.rb:165:in `process_action'
+actionpack (7.0.10) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.10) lib/active_support/callbacks.rb:107:in `run_callbacks'
+actionpack (7.0.10) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.10) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.10) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.10) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.10) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.10) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.10) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.10) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+mongoid (7.6.0) lib/mongoid/railties/controller_runtime.rb:21:in `process_action'
+actionpack (7.0.10) lib/abstract_controller/base.rb:151:in `process'
+actionpack (7.0.10) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.10) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.10) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.10) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.10) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.10) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.10) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.10) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.10) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.10) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden-jwt_auth (0.12.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.12.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.2.21) lib/rack/builder.rb:244:in `call'
+warden-jwt_auth (0.12.0) lib/warden/jwt_auth/middleware.rb:22:in `call'
+warden (1.2.9) lib/warden/manager.rb:31:in `call'
+rack (2.2.21) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.21) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.21) lib/rack/etag.rb:27:in `call'
+rack (2.2.21) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.21) lib/rack/head.rb:12:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.10) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.10) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.10) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.10) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.10) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.10) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.10) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.10) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.21) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.10) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.10) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.10) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.21) lib/rack/sendfile.rb:127:in `call'
+actionpack (7.0.10) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+rack-cors (2.0.2) lib/rack/cors.rb:102:in `call'
+railties (7.0.10) lib/rails/engine.rb:531:in `call'
+puma (7.1.0) lib/puma/configuration.rb:300:in `call'
+puma (7.1.0) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.1.0) lib/puma/thread_pool.rb:355:in `with_force_shutdown'
+puma (7.1.0) lib/puma/request.rb:100:in `handle_request'
+puma (7.1.0) lib/puma/server.rb:503:in `process_client'
+puma (7.1.0) lib/puma/server.rb:262:in `block in run'
+puma (7.1.0) lib/puma/thread_pool.rb:182:in `block in spawn_thread'
+MONGODB | Server description for ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 changed from 'secondary' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 changed from 'secondary' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+[dotenv] Loaded [33m.env[0m
+Started POST "/users" for 192.168.65.1 at 2026-01-08 17:28:27 +0000
+Processing by RegistrationsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abc@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"abc@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+MONGODB | attempting to resolve cluster0.r5tcokx.mongodb.net
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Topology type 'Unknown' changed to type 'ReplicaSetNoPrimary'.
+MONGODB | Server ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 initializing.
+MONGODB | Server ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 initializing.
+MONGODB | Server ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017,name=atlas-rlh8mo-shard-0] servers=[#<Server address=ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 UNKNOWN>,#<Server address=ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 UNKNOWN>,#<Server address=ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 UNKNOWN>]>
+MONGODB | Server description for ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 changed from 'unknown' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetNoPrimary' topology.
+MONGODB | Waiting for up to 29.82 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017,name=atlas-rlh8mo-shard-0] servers=[#<Server address=ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 UNKNOWN>,#<Server address=ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 UNKNOWN>,#<Server address=ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 SECONDARY replica_set=atlas-rlh8mo-shard-0 pool=#<ConnectionPool size=0 (0-20) used=0 avail=0 pending=0 ready>>]>
+MONGODB | Server description for ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 changed from 'unknown' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetNoPrimary' topology.
+MONGODB | Waiting for up to 29.79 seconds for servers to be scanned: #<Cluster topology=ReplicaSetNoPrimary[ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017,ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017,name=atlas-rlh8mo-shard-0] servers=[#<Server address=ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 SECONDARY replica_set=atlas-rlh8mo-shard-0 pool=#<ConnectionPool size=0 (0-20) used=0 avail=0 pending=0 ready>>,#<Server address=ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 UNKNOWN>,#<Server address=ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 SECONDARY replica_set=atlas-rlh8mo-shard-0 pool=#<ConnectionPool size=0 (0-20) used=0 avail=0 pending=0 ready>>]>
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'unknown' to 'primary'.
+MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+The criteria cache has been deprecated and will be removed in Mongoid 8. Please enable the Mongoid QueryCache to have caching functionality.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:10 conn:1:1 sconn:1012705 | admin.saslStart | STARTED | {}
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:10 | admin.saslStart | SUCCEEDED | 0.016s
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:11 conn:1:1 sconn:1012705 | admin.saslContinue | STARTED | {}
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:11 | admin.saslContinue | SUCCEEDED | 0.015s
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:12 conn:1:1 sconn:1012705 | mysmsmessenger.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"abc@test.com"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"mysmsmessenger", "lsid"=>{"id"=><BSON::Binary:0x12240 type=uuid data=0x9ef627c1557a4ac1...>}}
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:12 | mysmsmessenger.find | SUCCEEDED | 0.015s
+Completed 422 Unprocessable Entity in 691ms (Views: 0.2ms | MongoDB: 0.0ms | Allocations: 24725)
+
+
+MONGODB | Server description for ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 changed from 'secondary' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 changed from 'secondary' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+Started POST "/users" for 192.168.65.1 at 2026-01-08 17:29:01 +0000
+Processing by RegistrationsController#create as HTML
+  Parameters: {"user"=>{"email"=>"abc@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"abc@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:22 conn:1:1 sconn:1012705 | mysmsmessenger.find | STARTED | {"find"=>"users", "filter"=>{"email"=>"abc@test.com"}, "limit"=>1, "projection"=>{"_id"=>1}, "$db"=>"mysmsmessenger", "$clusterTime"=>{"clusterTime"=>#<BSON::Timestamp:0x0000ffff65391600 @seconds=1767893308, @increment=3>, "signature"=>{"hash"=><BSON:...
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:22 | mysmsmessenger.find | SUCCEEDED | 0.034s
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:23 conn:1:1 sconn:1012705 | mysmsmessenger.insert | STARTED | {"insert"=>"users", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('695fe95ec2d3b82a05911bc0'), "email"=>"abc@test.com", "encrypted_password"=>"$2a$12$HhUegm37YWZHedY3OvwQ4.2O3.qf5QqJ3IPNQMzbhph56xq/PRji.", "updated_at"=>2026-01-08 17:29:02.061...
+MONGODB | ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 req:23 | mysmsmessenger.insert | SUCCEEDED | 0.063s
+Completed 200 OK in 318ms (Views: 0.2ms | MongoDB: 0.1ms | Allocations: 4251)
+
+
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary' [awaited].
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Error checking ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017: Mongo::Error::SocketError: OpenSSL::SSL::SSLError: SSL_read: unexpected eof while reading (for 89.192.9.215:27017 (ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017, TLS)) (on ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017, sconn:950624)
+MONGODB | Error checking ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017: Mongo::Error::SocketError: OpenSSL::SSL::SSLError: SSL_read: unexpected eof while reading (for 89.192.9.208:27017 (ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017, TLS)) (on ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017, sconn:954276)
+MONGODB | Server description for ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 changed from 'secondary' to 'unknown'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 changed from 'secondary' to 'unknown'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Error checking ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017: Mongo::Error::SocketError: OpenSSL::SSL::SSLError: SSL_read: unexpected eof while reading (for 89.192.9.224:27017 (ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017, TLS)) (on ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017, sconn:1012698)
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'unknown'.
+MONGODB | Topology type 'ReplicaSetWithPrimary' changed to type 'ReplicaSetNoPrimary'.
+MONGODB | Server description for ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 changed from 'unknown' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetNoPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 changed from 'unknown' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetNoPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'unknown' to 'primary'.
+MONGODB | Topology type 'ReplicaSetNoPrimary' changed to type 'ReplicaSetWithPrimary'.
+MONGODB | Server description for ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017 changed from 'secondary' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017 changed from 'secondary' to 'secondary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Error running awaited hello on ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 20 seconds to receive data (select call timed out) (for 89.192.9.215:27017 (ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017, TLS)) (on ac-pp0cnbw-shard-00-01.r5tcokx.mongodb.net:27017)
+MONGODB | Error running awaited hello on ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 20 seconds to receive data (select call timed out) (for 89.192.9.208:27017 (ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017, TLS)) (on ac-pp0cnbw-shard-00-00.r5tcokx.mongodb.net:27017)
+MONGODB | Error running awaited hello on ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 20 seconds to receive data (select call timed out) (for 89.192.9.224:27017 (ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017, TLS)) (on ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017)
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.
+MONGODB | Server description for ac-pp0cnbw-shard-00-02.r5tcokx.mongodb.net:27017 changed from 'primary' to 'primary'.
+MONGODB | There was a change in the members of the 'ReplicaSetWithPrimary' topology.

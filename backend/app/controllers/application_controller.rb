@@ -1,5 +1,2 @@
-class ApplicationController < ActionController::Base
-    def frontend
-        render file: Rails.root.join('public', 'index.html')
-    end
+class ApplicationController < ActionController::API
 end

@@ -17,4 +17,4 @@ RUN bundle install
 COPY . .
 
 EXPOSE 3000
-CMD ["bundle", "exec", "rails", "s", "-b", "0.0.0.0", "-p", "3000"]
+CMD ["sh", "-c", "rm -f tmp/pids/server.pid && bundle exec rails s -b 0.0.0.0 -p 3000"]

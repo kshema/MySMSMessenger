@@ -1,1 +1,1 @@
-web: cd backend && bundle exec rails server -p $PORT -e production
+web: rm -f tmp/pids/server.pid && bundle exec rails server -p $PORT -e production

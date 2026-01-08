@@ -1,0 +1,16 @@
+# Ignore node_modules in the frontend
+frontend/node_modules/
+
+# Ignore build artifacts in the frontend
+frontend/dist/
+
+# Ignore temporary files in the backend
+backend/tmp/
+backend/log/
+backend/public/
+
+# Ignore sensitive environment files
+backend/.env
+
+# Ignore system files
+.DS_Store

@@ -1,0 +1,30 @@
+<div class="sign-up-box">
+<h2>Sign Up</h2>
+<form (ngSubmit)="signUp()" #signUpForm="ngForm">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" [(ngModel)]="email" required />
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" [(ngModel)]="password"  (input)="checkPasswordRequirements()" required />
+  <div class="password-requirements">
+    <p>Password must meet the following requirements:</p>
+    <ul>
+      <li [class.valid]="passwordLengthValid">At least 6 characters</li>
+      <li [class.valid]="passwordHasNumber">At least one number</li>
+      <li [class.valid]="passwordHasUppercase">At least one uppercase letter</li>
+      <li [class.valid]="passwordHasLowercase">At least one lowercase letter</li>
+      <li [class.valid]="passwordHasSpecialChar">At least one special character</li>
+    </ul>
+  </div>
+  <label for="password_confirmation">Confirm Password</label>
+  <input
+    type="password"
+    id="password_confirmation"
+    name="password_confirmation"
+    [(ngModel)]="passwordConfirmation"
+    required
+  />
+
+  <button type="submit" [disabled]="signUpForm.invalid">Sign Up</button>
+</form>
+</div>
