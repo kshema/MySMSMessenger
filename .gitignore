@@ -1,13 +1,17 @@
 # Ignore node_modules in the frontend
-frontend/node_modules/
+frontend/my-sms-messenger/node_modules/
 
 # Ignore build artifacts in the frontend
-frontend/dist/
+frontend/my-sms-messenger/dist/
+
+# Ignore Angular cache files
+frontend/my-sms-messenger/.angular/cache/
+
+# Ignore backend logs
+backend/log/
 
 # Ignore temporary files in the backend
 backend/tmp/
-backend/log/
-backend/public/
 
 # Ignore sensitive environment files
 backend/.env
