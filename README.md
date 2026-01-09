@@ -3,14 +3,11 @@
 MySMSMessenger is a full-stack application for sending and managing SMS messages. It consists of a **backend** built with Ruby on Rails and MongoDB, and a **frontend** built with Angular.
 
 Live url: https://mysmsmessenger.netlify.app/
----
 
 ## **Features**
 - Send SMS messages using Twilio.
 - View message history.
 - User authentication and authorization.
-
----
 
 ## **Backend Setup**
 
