@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { environment } from '../../environments/environment';
 import { RouterModule } from '@angular/router';
+import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,7 @@ export class Login {
   password = '';
   errorMessage: string | null = null;
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient, private cdr: ChangeDetectorRef, private router: Router) {}
 
   login() {
     const url = `${environment.baseUrl}/users/sign_in`;
@@ -48,6 +49,7 @@ export class Login {
           this.router.navigate(['/send-message']);
         } else {
           this.errorMessage = 'Unexpected response from the server.';
+          this.cdr.detectChanges();
         }
       },
       error: (error) => {
@@ -57,6 +59,7 @@ export class Login {
           this.errorMessage = 'An unexpected error occurred.';
         }
         console.error('Login failed:', error);
+        this.cdr.detectChanges();
       },
     });
   }

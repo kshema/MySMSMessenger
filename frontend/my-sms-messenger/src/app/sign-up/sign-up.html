@@ -1,5 +1,8 @@
 <div class="sign-up-box">
 <h2>Sign Up</h2>
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
 <form (ngSubmit)="signUp()" #signUpForm="ngForm">
   <label for="email">Email</label>
   <input type="email" id="email" name="email" [(ngModel)]="email" required />
@@ -25,6 +28,6 @@
     required
   />
 
-  <button type="submit" [disabled]="signUpForm.invalid">Sign Up</button>
+  <button type="submit" [disabled]="signUpForm.invalid || !isPasswordValid()">Sign Up</button>
 </form>
 </div>

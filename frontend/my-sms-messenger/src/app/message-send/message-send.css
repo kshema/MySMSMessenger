@@ -1,4 +1,14 @@
-/* General Layout */
+.messenger-box {
+  max-width: 1000px;
+  max-height: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .grid {
   display: flex;
   gap: 20px;
@@ -28,7 +38,7 @@
 
 .message-send-form input,
 .message-send-form textarea {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -36,7 +46,8 @@
 }
 
 .message-send-form textarea {
-  resize: none;
+  height: 150px;
+  resize: vertical;
 }
 
 .message-send-form .message-length {
@@ -102,4 +113,47 @@
   text-align: right;
   font-size: 12px;
   color: #888;
+}
+
+/* General status styling */
+.status {
+  font-size: 12px;
+}
+
+/* Sent status */
+.sent {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Pending status */
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+/* Failed status */
+.failed {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.clear-all-link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.clear-all-link:hover {
+  text-decoration: underline;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
 }

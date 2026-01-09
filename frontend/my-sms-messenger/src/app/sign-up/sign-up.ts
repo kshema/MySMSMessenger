@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { environment} from '../../environments/environment';
+import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-sign-up',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './sign-up.html',
   styleUrl: './sign-up.css',
 })
@@ -15,6 +17,7 @@ export class SignUp {
   email = '';
   password = '';
   passwordConfirmation = '';
+  errorMessage = '';
 
   // Password requirement flags
   passwordLengthValid = false;
@@ -23,7 +26,7 @@ export class SignUp {
   passwordHasLowercase = false;
   passwordHasSpecialChar = false;
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient,  private cdr: ChangeDetectorRef, private router: Router) {}
 
   signUp() {
     const url = `${environment.baseUrl}/users`;
@@ -42,6 +45,8 @@ export class SignUp {
       },
       error: (error) => {
         console.error('Sign up failed:', error);
+        this.errorMessage = error.error.status.message || 'Sign up failed. Please try again.';
+        this.cdr.detectChanges();
       },
     });
   }
@@ -54,5 +59,15 @@ export class SignUp {
     this.passwordHasUppercase = /[A-Z]/.test(password);
     this.passwordHasLowercase = /[a-z]/.test(password);
     this.passwordHasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+  }
+
+  isPasswordValid(): boolean {
+    return (
+      this.passwordLengthValid &&
+      this.passwordHasNumber &&
+      this.passwordHasUppercase &&
+      this.passwordHasLowercase &&
+      this.passwordHasSpecialChar
+    );
   }
 }

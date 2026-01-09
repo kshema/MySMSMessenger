@@ -1,15 +1,12 @@
 <html>
     <body>
+        <div class="messenger-box">
         <div class="message-send-container">       
         <h1>MY SMS MESSENGER</h1>
             <a href="#" (click)="logout()" class="logout-link">Logout</a> 
             <div class="grid">
                 <section class="message-send-form">
-                    <h2>New Message</h2>
-                    <div class="message-status">
-                        <strong>Status:</strong> {{ message.status | titlecase }}
-                    </div>
-            
+                    <h2>New Message</h2>           
                     <div *ngIf="errorMessage" class="error-message">
                         {{ errorMessage }}
                     </div>
@@ -20,7 +17,10 @@
                         <label for="message_content">Message</label>
                         <textarea id="message_content" name="message_content" [(ngModel)]="message.message_content" required></textarea>
 
-                        <button type="submit" [disabled]="messageForm.invalid">Submit</button>
+                        <div class="form-actions">
+                            <a (click)="clearAll()" class="clear-all-link">Clear</a>
+                            <button type="submit" [disabled]="messageForm.invalid">Submit</button>
+                        </div>
                     </form>
                 </section>
 
@@ -30,6 +30,7 @@
                         <div *ngFor="let msg of messageHistory">
                             <div class="message-header">
                                 <span class="phone-number">{{ msg.phone_number }}</span>
+                                <span [ngClass]="msg.status"> {{ msg.status }} </span>
                                 <span class="timestamp">{{ msg.created_at | date: 'fullDate' }} {{ msg.created_at | date: 'shortTime' }}</span>
                             </div>
                             <div class="message-content message-item">
@@ -38,15 +39,11 @@
                             <div class="message-length">
                                 {{ msg.message_content.length }}/250
                             </div>
-
-                            <div class="message-reflection">
-                                <span *ngIf="msg.status === 'sent'" class="sent-status"> Sent</span>
-                                <span *ngIf="msg.status !== 'sent'" class="pending-status"> Sending...</span>
-                            </div>
                         </div>
                     </div>
                 </section>
             </div>
         </div>
+    </div>
     </body>
 </html>

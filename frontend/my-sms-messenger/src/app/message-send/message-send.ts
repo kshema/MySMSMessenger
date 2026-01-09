@@ -70,4 +70,9 @@ export class MessageSend {
     localStorage.removeItem('authToken');
     this.router.navigate(['/login']);
   }
+
+  clearAll() {
+    this.message.phone_number = '';
+    this.message.message_content = '';
+  }
 }
