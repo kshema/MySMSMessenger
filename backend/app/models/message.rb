@@ -6,6 +6,7 @@ class Message
   field :phone_number, type: String
   field :status, type: String, default: 'pending'
   field :sent_at, type: Time
+  field :twilio_sid, type: String 
 
   belongs_to :user
   
@@ -21,6 +22,7 @@ class Message
         body: message_content,
         status_callback: "#{ENV['BASE_URL']}/messenger/twilio_callback"
       )
+      update!(twilio_sid: message.sid)
     rescue StandardError => e
       update(status: 'failed')
       Rails.logger.error("Failed to send message to #{phone_number}: #{e.message}")
