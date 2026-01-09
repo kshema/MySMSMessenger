@@ -15,7 +15,10 @@
                         <input type="text" id="phone_number" name="phone_number" [(ngModel)]="message.phone_number" required />
 
                         <label for="message_content">Message</label>
-                        <textarea id="message_content" name="message_content" [(ngModel)]="message.message_content" required></textarea>
+                        <textarea id="message_content" name="message_content" maxlength="250" (input)="updateCharacterCount()" [(ngModel)]="message.message_content" required></textarea>
+                        <div class="character-counter">
+                            {{ message.message_content.length || 0 }}/250
+                        </div>
 
                         <div class="form-actions">
                             <a (click)="clearAll()" class="clear-all-link">Clear</a>

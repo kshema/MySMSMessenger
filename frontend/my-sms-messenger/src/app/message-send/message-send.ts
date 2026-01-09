@@ -43,11 +43,15 @@ export class MessageSend {
         this.errorMessage = null;
        
         this.fetchMessageHistory();
+        setTimeout(() => {
+          this.fetchMessageHistory();
+        }, 5000); 
       },
       error: (error) => {
         this.errorMessage = 'Failed to send message.';
         this.successMessage = null;
         console.error('Error sending message:', error);
+        this.cdr.detectChanges();
       },
     });
   }
@@ -74,5 +78,11 @@ export class MessageSend {
   clearAll() {
     this.message.phone_number = '';
     this.message.message_content = '';
+  }
+
+  updateCharacterCount() {
+    if (this.message.message_content.length > 250) {
+      this.message.message_content = this.message.message_content.slice(0, 250); // Trim excess characters
+    }
   }
 }

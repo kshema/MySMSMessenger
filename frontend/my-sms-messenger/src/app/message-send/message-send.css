@@ -157,3 +157,22 @@
   align-items: center;
   margin-top: 10px;
 }
+
+.validation-error {
+  color: #ff0000;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Character counter styling */
+.character-counter {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
