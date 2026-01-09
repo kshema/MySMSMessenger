@@ -1,5 +1,5 @@
 class MessengerController < ApplicationController
-    skip_before_action :authenticate_user!, only: [:twilio_callback]
+    before_action :authenticate_user!, except: [:twilio_callback]
 
     def index
         if current_user.nil?
