@@ -13,7 +13,7 @@ Live url: https://mysmsmessenger.netlify.app/
 
 ### **Steps**
 1. Clone the repository (https://github.com/kshema/MySMSMessenger)
-2. Navigate to the backed: cd MySMSMessenger/backend
+2. Navigate to the backend: cd MySMSMessenger/backend
 3. Create a free account in twilio, get the credentials
 4. Rename .env.example to .env and add values
 5. Create docker image (docker compose build)
@@ -33,7 +33,7 @@ Live url: https://mysmsmessenger.netlify.app/
 3. Created mongodb connection in mongodb atlas
 4. Steps    
     - Pushed code to Github
-    - Conned Github with Heroku
-    - Added Enviornemnt variables in Settings
+    - Connected Github with Heroku
+    - Added Environment variables in Settings
     - Deploy the application
     - Continous deployment enabled through Github
