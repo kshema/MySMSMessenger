@@ -1,21 +1,3 @@
-.messenger-box {
-  max-width: 1000px;
-  max-height: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #333;
-}
-
 .grid {
   display: flex;
   gap: 20px;
@@ -61,20 +43,6 @@ h1 {
   text-align: right;
   font-size: 12px;
   color: #888;
-}
-
-.message-send-form button {
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.message-send-form button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
 }
 
 /* Message History Styling */
@@ -177,9 +145,4 @@ h1 {
   color: #555;
   margin-top: 5px;
   text-align: right;
-}
-
-.error-message {
-  color: red;
-  margin-bottom: 10px;
 }

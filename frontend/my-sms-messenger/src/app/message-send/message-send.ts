@@ -71,8 +71,19 @@ export class MessageSend {
   }
 
   logout() {
-    localStorage.removeItem('authToken');
-    this.router.navigate(['/login']);
+    const url = `${environment.baseUrl}/logout`; // Backend logout endpoint
+    this.http.post(url, {}, this.headers).subscribe({
+      next: () => {
+        localStorage.removeItem('authToken');
+        this.router.navigate(['/login']);
+      },
+      error: (error) => {
+        console.error('Error during logout:', error);
+        // Still remove the token and navigate to login
+        localStorage.removeItem('authToken');
+        this.router.navigate(['/login']);
+      },
+    });
   }
 
   clearAll() {

@@ -13,6 +13,7 @@ class Message
   validates :message_content, presence: true, length: { maximum: 250 }
   validates :phone_number, presence: true, format: { with: /\A\+\d{10,15}\z/, message: "Phone number is not valid" }
 
+  # Webhook to receive status updates from Twilio
   def send_message
     begin
       client = Twilio::REST::Client.new(ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN'])

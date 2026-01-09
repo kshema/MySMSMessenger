@@ -16,9 +16,13 @@ import { ChangeDetectorRef } from '@angular/core';
 export class Login {
   email = '';
   password = '';
+  successMessage: string | null = null;
   errorMessage: string | null = null;
 
-  constructor(private http: HttpClient, private cdr: ChangeDetectorRef, private router: Router) {}
+  constructor(private http: HttpClient, private cdr: ChangeDetectorRef, private router: Router) {
+    const navigation = this.router.getCurrentNavigation();
+    this.successMessage = navigation?.extras.state?.['message'] || null;
+  }
 
   login() {
     const url = `${environment.baseUrl}/users/sign_in`;
@@ -33,14 +37,11 @@ export class Login {
     this.http.post(url, userData, { observe: 'response' }).subscribe({
       next: (response) => {
         this.errorMessage = null;
-        if (response.status === 200) {
-          console.log('Login successful:', response);
-    
+        if (response.status === 200) {   
           // Extract the token from the Authorization header
           const token = response.headers.get('Authorization')?.split(' ')[1] || null;
           if (token) {
             localStorage.setItem('authToken', token);
-            console.log('Token stored in localStorage:', token);
           } else {
             console.warn('No token found in the Authorization header.');
           }

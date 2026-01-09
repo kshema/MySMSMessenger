@@ -9,7 +9,7 @@ describe('Login', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FormsModule, RouterTestingModule, Login], // Add FormsModule and RouterTestingModule
+      imports: [FormsModule, RouterTestingModule, Login],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Login);

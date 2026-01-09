@@ -1,10 +1,13 @@
-<div class="login-box">
+<div class="outer-box">
 <div class="login-container">
     <!-- Left Side: Login Form -->
     <div class="login-form">
       <h1>Sign In</h1>
 
-      <!-- Error Message -->
+      <div *ngIf="successMessage" class="success-message">
+        {{ successMessage }}
+      </div>
+
       <div *ngIf="errorMessage" class="error-message">
         {{ errorMessage }}
       </div>
@@ -16,9 +19,16 @@
           id="email"
           name="email"
           [(ngModel)]="email"
+          #emailInput="ngModel"
           required
+          email
         />
   
+        <div *ngIf="emailInput.invalid && emailInput.touched" class="error-message">
+          <small *ngIf="emailInput.errors?.['required']">Email is required.</small>
+          <small *ngIf="emailInput.errors?.['email']">Please enter a valid email address.</small>
+        </div>
+
         <label for="password">Password</label>
         <input
           type="password"

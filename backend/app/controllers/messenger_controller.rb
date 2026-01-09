@@ -1,6 +1,7 @@
 class MessengerController < ApplicationController
     before_action :authenticate_user!, except: [:twilio_callback]
 
+    # GET message history for current user if authenticated
     def index
         if current_user.nil?
             render json: { error: 'User not authenticated' }, status: :unauthorized
@@ -11,7 +12,13 @@ class MessengerController < ApplicationController
         render json: messages, status: :ok
     end
 
+    # POST send a new message
     def create
+        if current_user.nil?
+            render json: { error: 'User not authenticated' }, status: :unauthorized
+            return
+        end
+        
         message = current_user.messages.new(message_params)
         if message.save
             message.send_message
@@ -35,6 +42,7 @@ class MessengerController < ApplicationController
     end
 
     private
+
     def message_params
         params.require(:message).permit(:message_content, :phone_number)
     end

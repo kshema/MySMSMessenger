@@ -1,15 +1,4 @@
-  .sign-up-box {
-    max-width: 800px;
-    max-height: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  form {
+form {
     flex: 1;
     padding: 40px;
     background-color: #f9f9f9;
@@ -19,15 +8,6 @@
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Form heading */
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  /* Label styling */
   label {
     display: block;
     margin-bottom: 5px;
@@ -44,28 +24,6 @@
     border-radius: 4px;
     font-size: 14px;
     box-sizing: border-box;
-  }
-  
-  /* Button styling */
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  button:hover:not(:disabled) {
-    background-color: #0056b3;
   }
 
   /* Password Requirements */
@@ -87,9 +45,4 @@
   .password-requirements li.valid {
     color: green;
     font-weight: bold;
-  }
-
-  .error-message {
-    color: red;
-    margin-bottom: 10px;
   }

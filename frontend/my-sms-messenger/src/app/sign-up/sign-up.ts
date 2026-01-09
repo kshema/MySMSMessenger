@@ -40,8 +40,9 @@ export class SignUp {
 
     this.http.post(url, userData).subscribe({
       next: (response) => {
-        console.log('Sign up successful:', response);
-        this.router.navigate(['/login']); // Redirect to login page after successful sign up
+        this.router.navigate(['/login'], {
+          state: { message: 'Sign up successful! Please log in.' },
+        });
       },
       error: (error) => {
         console.error('Sign up failed:', error);
